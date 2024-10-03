@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="enter">
+        <div class="name-block">
+            <h3 class="name" id="name">Movie Title</h3>
+            <input type="text" class="input-name" id="input-name">
+        </div>
+
+        <div class="duration-block">
+            <h3 class="duration" id="duration">Duration (min)</h3>
+            <input type="text" class="input-duration" id="input-duration">
+        </div>
+
+        <div class="reviews-block">
+            <h3 class="reviews" id="reviews">IMDB Reviews</h3>
+            <input type="text" class="input-reviews" id="input-reviews">
+        </div>
+
+        <button class="create" id="create">Add Movie</button>
+
+        <button class="count-reviews" id="count-reviews">Count Total Reviews</button>
+        <p id="review-count" class="review-count"></p>
+
+        <div class="sort-container">
+            <h3 for="sort-options">Sort by:</h3>
+            <select id="sort-options" class="sort-options">
+                <option value="name">Title</option>
+                <option value="duration">Duration</option>
+                <option value="reviews">IMDB Reviews</option>
+            </select>
+            <button id="sort-button">Sort</button>
+        </div>        
+    </div>
+
+    <div class="contains" id="contains">
+        <div class="search-container">
+            <input type="text" class="search-input" id="search-input" placeholder="Search by title">
+            <button class="search" id="search">Search</button>
+            <button class="cancel" id="cancel">Cancel</button>
+        </div>
+        <ul id="items-container"></ul>
+    </div>
+
+    <script type="module" src="./dom_util.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

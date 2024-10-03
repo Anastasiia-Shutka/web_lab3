@@ -1,0 +1,115 @@
+body {
+    font-family: 'Space Grotesk';
+    background-color: #ffcccc;
+    display: flex;
+    flex-direction: row;
+    color: cadetblue;
+}
+
+.enter {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 50px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    height: 35px;
+}
+
+h3 {
+    font-weight: 300;
+    color: palevioletred;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    width: 25vw;
+    height: 50px;
+    background-color: palevioletred;
+    color: #ffcccc;
+    font-family: 'Space Grotesk';
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.contains {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.search, .cancel {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+}
+
+.cancel{
+    background-color: palevioletred;
+}
+
+.item-card {
+    width: 30vw; 
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.movie-container__image card-img-top {
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title, .card-text-volume, .card-text-passengers {
+    margin: 5px 0;
+    color: cadetblue; 
+}
+
+.btn-info {
+    margin: 10px;
+    width: 300px;
+}
+
+.sort-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sort-options {
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    height: 35px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: white;
+    color: grey;
+}
